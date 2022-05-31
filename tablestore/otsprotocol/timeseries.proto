@@ -1,5 +1,6 @@
 syntax = "proto2";
 
+option go_package="./";
 package otsprotocol;
 
 message TimeseriesTableOptions {
@@ -183,8 +184,13 @@ message GetTimeseriesDataRequest {
   optional int64 specific_time = 5;
   optional bytes token = 6;
   optional int32 limit = 7;
+  optional bool backward = 8;
+  repeated TimeseriesFieldsToGet fields_to_get = 9;
 }
-
+message TimeseriesFieldsToGet {
+  optional string name = 1;
+  optional int32 type = 2;
+}
 message GetTimeseriesDataResponse {
   required bytes rows_data = 1;
   optional bytes next_token = 2;
