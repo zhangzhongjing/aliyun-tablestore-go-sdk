@@ -659,9 +659,7 @@ func (timeseriesClient *TimeseriesClient) GetTimeseriesData(request *GetTimeseri
 	req.BeginTime = proto.Int64(request.GetBeginTimeInUs())
 	req.EndTime = proto.Int64(request.GetEndTimeInUs())
 	req.TimeSeriesKey, err = buildTimeseriesKey(request.GetTimeseriesKey())
-	if err != nil {
-		return nil, err
-	}
+	req.Backward = proto.Bool(request.GetBackward())
 
 	if request.GetLimit() > 0 {
 		req.Limit = proto.Int32(int32(request.GetLimit()))
@@ -669,6 +667,12 @@ func (timeseriesClient *TimeseriesClient) GetTimeseriesData(request *GetTimeseri
 
 	if request.GetNextToken() != nil && len(request.GetNextToken()) != 0 {
 		req.Token = append([]byte{}, request.GetNextToken()...)
+	}
+
+	if request.GetFieldsToGet() != nil && len(request.GetFieldsToGet()) != 0 {
+		for _, v := range request.GetFieldsToGet() {
+			req.FieldsToGet = append(req.FieldsToGet, &otsprotocol.TimeseriesFieldsToGet{Name: &v.name, Type: &v.fieldType})
+		}
 	}
 
 	resp := new(otsprotocol.GetTimeseriesDataResponse)

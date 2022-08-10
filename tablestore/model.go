@@ -908,6 +908,13 @@ const (
 	 */
 	DefinedColumn_BINARY DefinedColumnType = 5
 )
+const (
+	LONG int = iota + 1
+	BOOLEAN
+	DOUBLE
+	STRINGS
+	BINARY
+)
 
 type StartLocalTransactionRequest struct {
 	PrimaryKey *PrimaryKey
@@ -1258,6 +1265,12 @@ type GetTimeseriesDataRequest struct {
 	endTimeInUs         int64
 	nextToken           []byte
 	limit               int32
+	backward            bool
+	fieldsToGet         []*TimeseriesFieldsToGets
+}
+type TimeseriesFieldsToGets struct {
+	name      string
+	fieldType int32
 }
 
 func NewGetTimeseriesDataRequest(timeseriesTableName string) *GetTimeseriesDataRequest {
@@ -1298,6 +1311,22 @@ func (getDataRequest *GetTimeseriesDataRequest) GetBeginTimeInUs() int64 {
 
 func (getDataRequest *GetTimeseriesDataRequest) GetEndTimeInUs() int64 {
 	return getDataRequest.endTimeInUs
+}
+
+func (getDataRequest *GetTimeseriesDataRequest) SetBackward(Backward bool) {
+	getDataRequest.backward = Backward
+}
+
+func (getDataRequest *GetTimeseriesDataRequest) GetBackward() bool {
+	return getDataRequest.backward
+}
+
+func (getDataRequest *GetTimeseriesDataRequest) SetFieldsToGet(FieldsToGet TimeseriesFieldsToGets) {
+	getDataRequest.fieldsToGet = append(getDataRequest.fieldsToGet, &FieldsToGet)
+}
+
+func (getDataRequest *GetTimeseriesDataRequest) GetFieldsToGet() []*TimeseriesFieldsToGets {
+	return getDataRequest.fieldsToGet
 }
 
 func (getDataRequest *GetTimeseriesDataRequest) SetNextToken(nextToken []byte) {
