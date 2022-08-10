@@ -241,7 +241,6 @@ func (internalClient *internalClient) doRequestWithRetry(uri string, req, resp p
 	for i = 0; ; i++ {
 		respBody, err, requestId = internalClient.doRequest(url, uri, body, resp)
 		responseInfo.RequestId = requestId
-
 		if err == nil {
 			break
 		} else {
