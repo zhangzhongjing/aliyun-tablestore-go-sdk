@@ -234,9 +234,6 @@ func (internalClient *internalClient) doRequestWithRetry(uri string, req, resp p
 	} else {
 		body = nil
 	}
-
-
-	
 	var value int64
 	var i uint
 	var respBody []byte
