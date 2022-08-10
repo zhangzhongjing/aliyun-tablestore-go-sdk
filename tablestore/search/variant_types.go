@@ -1,9 +1,9 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/search/model"
 	"encoding/binary"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/search/model"
 	"math"
 	"reflect"
 )
@@ -117,12 +117,12 @@ func VTString(v string) VariantValue {
 	return (VariantValue)(buf)
 }
 
-func AsString(bytes []byte) (string, error){
+func AsString(bytes []byte) (string, error) {
 	if len(bytes) < 5 {
 		return "", errors.New("the length of bytes must greater than or equal 5")
 	}
-	length :=binary.LittleEndian.Uint32(bytes[1:5])
-	return string(bytes[5:5+length]), nil
+	length := binary.LittleEndian.Uint32(bytes[1:5])
+	return string(bytes[5 : 5+length]), nil
 }
 
 func VTBoolean(b bool) VariantValue {
@@ -136,7 +136,7 @@ func VTBoolean(b bool) VariantValue {
 	return (VariantValue)(buf)
 }
 
-func AsBoolean(bytes []byte) (bool, error)  {
+func AsBoolean(bytes []byte) (bool, error) {
 	if len(bytes) < 2 {
 		return true, errors.New("the length of bytes must greater than or equal 2")
 	}

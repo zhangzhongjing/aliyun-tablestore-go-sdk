@@ -1,9 +1,9 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"encoding/json"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -12,12 +12,12 @@ type SearchQuery interface {
 }
 
 type queryAlias struct {
-	Name string
+	Name  string
 	Query Query
 }
 
 type aggregationAlias struct {
-	Name string
+	Name        string
 	Aggregation Aggregation
 }
 
@@ -30,10 +30,10 @@ type searchQuery struct {
 	GetTotalCount bool
 	Token         []byte
 	Aggregations  []Aggregation `json:"-"`
-	GroupBys      []GroupBy `json:"-"`
+	GroupBys      []GroupBy     `json:"-"`
 
 	// for json marshal and unmarshal
-	QueryAlias    queryAlias `json:"Query"`
+	QueryAlias       queryAlias         `json:"Query"`
 	AggregationAlias []aggregationAlias `json:"Aggregations"`
 }
 
@@ -161,7 +161,7 @@ func (q *aggregationAlias) UnmarshalJSON(data []byte) (err error) {
 }
 
 func NewSearchQuery() *searchQuery {
-	return &searchQuery {
+	return &searchQuery{
 		Offset:        -1,
 		Limit:         -1,
 		GetTotalCount: false,
@@ -184,83 +184,83 @@ func (s *searchQuery) SetQuery(query Query) *searchQuery {
 }
 
 func NewAvgAggregation(name string, fieldName string) *AvgAggregation {
-	return &AvgAggregation {
+	return &AvgAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewDistinctCountAggregation(name string, fieldName string) *DistinctCountAggregation {
-	return &DistinctCountAggregation {
+	return &DistinctCountAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewMaxAggregation(name string, fieldName string) *MaxAggregation {
-	return &MaxAggregation {
+	return &MaxAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewMinAggregation(name string, fieldName string) *MinAggregation {
-	return &MinAggregation {
+	return &MinAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewSumAggregation(name string, fieldName string) *SumAggregation {
-	return &SumAggregation {
+	return &SumAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewCountAggregation(name string, fieldName string) *CountAggregation {
-	return &CountAggregation {
+	return &CountAggregation{
 		AggName: name,
-		Field: fieldName,
+		Field:   fieldName,
 	}
 }
 
 func NewTopRowsAggregation(name string) *TopRowsAggregation {
-	return &TopRowsAggregation {
+	return &TopRowsAggregation{
 		AggName: name,
 	}
 }
 
 func NewPercentilesAggregation(name string, filedName string) *PercentilesAggregation {
-	return &PercentilesAggregation {
+	return &PercentilesAggregation{
 		AggName: name,
-		Field: 	 filedName,
+		Field:   filedName,
 	}
 }
 
 //
 func NewGroupByField(name string, fieldName string) *GroupByField {
-	return &GroupByField {
+	return &GroupByField{
 		AggName: name,
 		Field:   fieldName,
 	}
 }
 
 func NewGroupByRange(name string, fieldName string) *GroupByRange {
-	return &GroupByRange {
+	return &GroupByRange{
 		AggName: name,
 		Field:   fieldName,
 	}
 }
 
 func NewGroupByFilter(name string) *GroupByFilter {
-	return &GroupByFilter {
+	return &GroupByFilter{
 		AggName: name,
 	}
 }
 
 func NewGroupByGeoDistance(name string, fieldName string, origin GeoPoint) *GroupByGeoDistance {
-	return &GroupByGeoDistance {
+	return &GroupByGeoDistance{
 		AggName: name,
 		Field:   fieldName,
 		Origin:  origin,

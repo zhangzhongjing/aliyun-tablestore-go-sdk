@@ -1,10 +1,10 @@
 package writer
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore"
+	"aliyun-tablestore-go-sdk/timeline/promise"
 	"context"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/timeline/promise"
 	"net/http"
 	"time"
 )

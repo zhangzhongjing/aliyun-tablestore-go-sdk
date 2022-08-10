@@ -1,12 +1,12 @@
 package tablestore
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/tablestore/sql/dataprotocol"
 	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/sql/dataprotocol"
 )
 
 type SQLStatementType int32

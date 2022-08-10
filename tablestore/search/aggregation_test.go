@@ -1,8 +1,8 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -47,7 +47,6 @@ func (a *invalidBodyAggregation) ProtoBuffer() (*otsprotocol.Aggregation, error)
 	return BuildPBForAggregation(a)
 }
 
-
 func TestBuildPBForAggregation(t *testing.T) {
 	mockAgg := &mockAggregation{}
 
@@ -81,7 +80,7 @@ func TestBuildPBForAggregations(t *testing.T) {
 func TestBuildPBForAggregationsInvalid(t *testing.T) {
 	mockAgg := &mockAggregation{}
 	invalidBodyAgg := &invalidBodyAggregation{}
-	aggs := []Aggregation {
+	aggs := []Aggregation{
 		mockAgg,
 		invalidBodyAgg,
 	}

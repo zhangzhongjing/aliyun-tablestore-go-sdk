@@ -1,9 +1,9 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"encoding/json"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 )
 
 type Sorter interface {
@@ -30,7 +30,7 @@ func (s *Sort) ProtoBuffer() (*otsprotocol.Sort, error) {
 
 func (s *Sort) MarshalJSON() ([]byte, error) {
 	type SorterInJson struct {
-		Name string
+		Name   string
 		Sorter Sorter
 	}
 

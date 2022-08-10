@@ -1,4 +1,4 @@
-module github.com/zhangzhongjing/aliyun-tablestore-go-sdk
+module aliyun-tablestore-go-sdk
 
 go 1.13
 

@@ -1,9 +1,9 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"encoding/json"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -18,7 +18,7 @@ const (
 	AggregationSumType           AggregationType = 5
 	AggregationCountType         AggregationType = 6
 	AggregationTopRowsType       AggregationType = 7
-	AggregationPercentilesType	 AggregationType = 8
+	AggregationPercentilesType   AggregationType = 8
 )
 
 func (a AggregationType) Enum() *AggregationType {

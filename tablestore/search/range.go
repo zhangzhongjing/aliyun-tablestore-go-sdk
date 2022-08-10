@@ -1,8 +1,8 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"math"
 )
 
@@ -10,8 +10,8 @@ var Inf = math.Inf(1)
 var NegInf = math.Inf(-1)
 
 type Range struct {
-	from float64	//math.Inf(-1) means negative infinity
-	to float64		//math.Inf(1) means positive infinity
+	from float64 //math.Inf(-1) means negative infinity
+	to   float64 //math.Inf(1) means positive infinity
 }
 
 func BuildPBForRanges(ranges []Range) ([]*otsprotocol.Range, error) {

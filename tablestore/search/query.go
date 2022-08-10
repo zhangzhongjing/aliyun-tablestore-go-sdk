@@ -1,10 +1,10 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 )
 
 type QueryType int

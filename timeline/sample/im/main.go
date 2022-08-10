@@ -1,8 +1,8 @@
 package main
 
 import (
+	"aliyun-tablestore-go-sdk/timeline"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/timeline"
 	"log"
 	"time"
 )

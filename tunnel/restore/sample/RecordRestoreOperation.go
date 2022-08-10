@@ -1,10 +1,10 @@
 package sample
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore"
+	"aliyun-tablestore-go-sdk/tunnel"
+	"aliyun-tablestore-go-sdk/tunnel/restore"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel/restore"
 	"log"
 	"os"
 	"os/signal"

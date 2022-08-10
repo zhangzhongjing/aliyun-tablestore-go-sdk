@@ -1,8 +1,8 @@
 package restore
 
 import (
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel"
+	"aliyun-tablestore-go-sdk/tablestore"
+	"aliyun-tablestore-go-sdk/tunnel"
 	. "gopkg.in/check.v1"
 	"os"
 	"reflect"

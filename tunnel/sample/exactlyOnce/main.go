@@ -1,10 +1,10 @@
 package exactlyOnce
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore"
+	"aliyun-tablestore-go-sdk/tunnel"
 	"encoding/json"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel"
 	"log"
 	"os"
 	"os/signal"

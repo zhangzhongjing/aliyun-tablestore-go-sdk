@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/search"
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/tablestore/search"
 	"github.com/golang/protobuf/proto"
 )
 

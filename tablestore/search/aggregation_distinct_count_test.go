@@ -1,7 +1,7 @@
 package search
 
 import (
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 	"testing"
@@ -40,7 +40,7 @@ func TestDistinctCountAggregation_ProtoBuffer(t *testing.T) {
 	assert.Nil(t, err)
 
 	//type
-	assert.Equal(t, pbAgg.GetType(),otsprotocol.AggregationType_AGG_DISTINCT_COUNT)
+	assert.Equal(t, pbAgg.GetType(), otsprotocol.AggregationType_AGG_DISTINCT_COUNT)
 
 	//name
 	assert.Equal(t, pbAgg.GetName(), "agg1")

@@ -1,7 +1,7 @@
 package search
 
 import (
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/search/model"
+	"aliyun-tablestore-go-sdk/tablestore/search/model"
 )
 
 type PercentilesAggregationItem struct {
@@ -10,7 +10,7 @@ type PercentilesAggregationItem struct {
 }
 
 type PercentilesAggregationResult struct {
-	Name                    string
+	Name                        string
 	PercentilesAggregationItems []PercentilesAggregationItem
 }
 

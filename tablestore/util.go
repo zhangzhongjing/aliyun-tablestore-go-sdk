@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/common"
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/common"
 )
 
 const (

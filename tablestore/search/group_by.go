@@ -1,8 +1,8 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -62,7 +62,7 @@ func (g GroupByType) ToPB() *otsprotocol.GroupByType {
     	optional GroupByType type = 2;
     	optional bytes body = 3;
 	}
- */
+*/
 type GroupBy interface {
 	//get group by name
 	GetName() string

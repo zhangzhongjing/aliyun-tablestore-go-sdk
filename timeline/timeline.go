@@ -1,8 +1,8 @@
 package timeline
 
 import (
+	"aliyun-tablestore-go-sdk/timeline/promise"
 	"context"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/timeline/promise"
 )
 
 type Api interface {

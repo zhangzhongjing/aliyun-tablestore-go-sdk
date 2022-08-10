@@ -1,14 +1,14 @@
 package search
 
 import (
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 )
 
 type SumAggregation struct {
-	AggName			string
-	Field			string
-	MissingValue	interface{}
+	AggName      string
+	Field        string
+	MissingValue interface{}
 }
 
 func (a *SumAggregation) GetName() string {

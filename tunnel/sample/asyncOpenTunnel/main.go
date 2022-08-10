@@ -1,8 +1,8 @@
 package main
 
 import (
+	"aliyun-tablestore-go-sdk/tunnel"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel"
 	"log"
 	"os"
 	"os/signal"
@@ -50,8 +50,8 @@ func main() {
 			ShutdownFunc: func(ctx *tunnel.ChannelContext) {
 				fmt.Println("shutdown hook")
 			},
-			NeedBinaryRecord:     true,
-			SyncCloseResource:    false,
+			NeedBinaryRecord:  true,
+			SyncCloseResource: false,
 		},
 	}
 

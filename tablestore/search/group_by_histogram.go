@@ -1,9 +1,9 @@
 package search
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"aliyun-tablestore-go-sdk/tablestore/search/model"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore/search/model"
 	"github.com/golang/protobuf/proto"
 )
 
@@ -11,7 +11,7 @@ type GroupByHistogram struct {
 	GroupByName string
 
 	Field       string
-	Interval   	interface{}
+	Interval    interface{}
 	Missing     interface{}
 	MinDocCount *int64
 	FieldRange  model.FiledRange

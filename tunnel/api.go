@@ -1,14 +1,14 @@
 package tunnel
 
 import (
+	"aliyun-tablestore-go-sdk/common"
+	"aliyun-tablestore-go-sdk/tunnel/protocol"
 	"bytes"
 	"crypto/md5"
 	"encoding/base64"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/common"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel/protocol"
 	"github.com/cenkalti/backoff"
 	"github.com/golang/protobuf/proto"
 	"github.com/satori/go.uuid"

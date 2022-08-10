@@ -1,9 +1,9 @@
 package restore
 
 import (
+	"aliyun-tablestore-go-sdk/tablestore"
+	"aliyun-tablestore-go-sdk/tunnel"
 	"errors"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tablestore"
-	"github.com/aliyun/aliyun-tablestore-go-sdk/tunnel"
 )
 
 func BinaryRecordRestore(client *tablestore.TableStoreClient, request *BinaryRecordReplayRequest) (*BinaryRecordReplayResponse, error) {
