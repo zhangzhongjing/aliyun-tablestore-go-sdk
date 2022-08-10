@@ -1,6 +1,6 @@
 package search
 
-import "aliyun-tablestore-go-sdk/tablestore/search/model"
+import "github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/search/model"
 
 type GroupByHistogramItem struct {
 	Key   model.ColumnValue

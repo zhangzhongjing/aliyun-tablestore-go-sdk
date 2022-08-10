@@ -3,9 +3,9 @@ package timeline
 import (
 	"strings"
 
-	"aliyun-tablestore-go-sdk/tablestore"
-	"aliyun-tablestore-go-sdk/timeline/promise"
-	"aliyun-tablestore-go-sdk/timeline/writer"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/promise"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/writer"
 )
 
 var pkColumns = 2

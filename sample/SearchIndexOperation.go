@@ -1,8 +1,8 @@
 package sample
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore"
-	"aliyun-tablestore-go-sdk/tablestore/search"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/search"
 	"encoding/json"
 	"fmt"
 	"github.com/golang/protobuf/proto"

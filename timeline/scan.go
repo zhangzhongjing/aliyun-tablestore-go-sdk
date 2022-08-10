@@ -1,7 +1,7 @@
 package timeline
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 	"context"
 )
 

@@ -1,7 +1,7 @@
 package model
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"bytes"
 	"fmt"
 	"io"

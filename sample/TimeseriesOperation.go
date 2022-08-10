@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 )
 
 /**

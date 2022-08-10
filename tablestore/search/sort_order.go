@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 )
 
 type SortOrder int8

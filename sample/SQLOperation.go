@@ -1,6 +1,6 @@
 package sample
 
-import "aliyun-tablestore-go-sdk/tablestore"
+import "github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 
 func SQLQuerySample(client *tablestore.TableStoreClient) {
 	SQLShowTablesSample(client)

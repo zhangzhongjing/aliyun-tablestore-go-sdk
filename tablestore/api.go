@@ -1,7 +1,7 @@
 package tablestore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"bytes"
 	"crypto/md5"
 	"encoding/base64"
@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"aliyun-tablestore-go-sdk/common"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/common"
 	lruCache "github.com/hashicorp/golang-lru"
 	"sync"
 )

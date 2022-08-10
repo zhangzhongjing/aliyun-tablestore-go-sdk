@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 )
 
 func CreateTableWithLocalIndexSample(client *tablestore.TableStoreClient, tableName string) {

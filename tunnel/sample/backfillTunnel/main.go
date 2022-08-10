@@ -1,8 +1,8 @@
 package main
 
 import (
-	"aliyun-tablestore-go-sdk/tunnel"
-	"aliyun-tablestore-go-sdk/tunnel/protocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel/protocol"
 	"fmt"
 	"log"
 	"os"

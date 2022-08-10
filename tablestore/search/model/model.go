@@ -1,11 +1,11 @@
 package model
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"fmt"
 	"strconv"
 	"strings"
-	//"aliyun-tablestore-go-sdk/tablestore"
+	//"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 )
 
 type PrimaryKey struct {

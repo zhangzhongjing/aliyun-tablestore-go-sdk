@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 )
 
 func CreateGetTimeseriesDataResponse(pbResponse *otsprotocol.GetTimeseriesDataResponse) (*GetTimeseriesDataResponse, error) {

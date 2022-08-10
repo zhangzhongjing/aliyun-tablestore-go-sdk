@@ -3,8 +3,8 @@ package timeline
 import (
 	"fmt"
 
-	"aliyun-tablestore-go-sdk/tablestore"
-	"aliyun-tablestore-go-sdk/timeline/writer"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/writer"
 )
 
 var (

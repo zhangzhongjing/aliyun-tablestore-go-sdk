@@ -5,10 +5,10 @@ import (
 	lruCache "github.com/hashicorp/golang-lru"
 	"reflect"
 
-	Fieldvalues "aliyun-tablestore-go-sdk/tablestore/timeseries/flatbuffer"
+	Fieldvalues "github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/timeseries/flatbuffer"
 	flatbuffers "github.com/google/flatbuffers/go"
 
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 )
 

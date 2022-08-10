@@ -1,8 +1,8 @@
 package restore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore"
-	"aliyun-tablestore-go-sdk/tunnel"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel"
 	"errors"
 )
 

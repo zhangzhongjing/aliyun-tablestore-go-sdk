@@ -1,8 +1,8 @@
 package tunnel
 
 import (
-	"aliyun-tablestore-go-sdk/common"
-	"aliyun-tablestore-go-sdk/tunnel/protocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/common"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel/protocol"
 	"bytes"
 	"crypto/md5"
 	"encoding/base64"

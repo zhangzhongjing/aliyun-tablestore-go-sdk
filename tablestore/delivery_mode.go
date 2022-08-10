@@ -1,6 +1,6 @@
 package tablestore
 
-import "aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+import "github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 
 type TaskType int32
 

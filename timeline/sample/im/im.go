@@ -1,9 +1,9 @@
 package main
 
 import (
-	"aliyun-tablestore-go-sdk/timeline"
-	"aliyun-tablestore-go-sdk/timeline/promise"
-	"aliyun-tablestore-go-sdk/timeline/writer"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/promise"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/writer"
 	"fmt"
 	"math"
 )

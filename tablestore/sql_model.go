@@ -1,8 +1,8 @@
 package tablestore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
-	"aliyun-tablestore-go-sdk/tablestore/sql/dataprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/sql/dataprotocol"
 	"bytes"
 	"encoding/json"
 	"errors"

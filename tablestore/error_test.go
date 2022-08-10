@@ -1,7 +1,7 @@
 package tablestore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"fmt"
 	"testing"
 )

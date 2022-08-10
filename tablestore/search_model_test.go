@@ -1,8 +1,8 @@
 package tablestore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
-	"aliyun-tablestore-go-sdk/tablestore/search"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/search"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 	"testing"

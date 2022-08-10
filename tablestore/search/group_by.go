@@ -1,7 +1,7 @@
 package search
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"errors"
 	"github.com/golang/protobuf/proto"
 )

@@ -7,7 +7,7 @@ Table Store tunnel service golang sdk.
 * download tunnel client source code
 
 ```bash
-go get aliyun-tablestore-go-sdk/tunnel
+go get github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel
 ```
 
 

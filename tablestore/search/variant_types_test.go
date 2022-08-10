@@ -1,7 +1,7 @@
 package search
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/search/model"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/search/model"
 	"github.com/stretchr/testify/assert"
 	"math/rand"
 	"testing"

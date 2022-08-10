@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"aliyun-tablestore-go-sdk/common"
-	"aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/common"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 	"github.com/golang/protobuf/proto"
 	lruCache "github.com/hashicorp/golang-lru"
 	"sync"

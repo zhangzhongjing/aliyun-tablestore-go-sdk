@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"aliyun-tablestore-go-sdk/sample"
-	"aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/sample"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
 )
 
 func main() {

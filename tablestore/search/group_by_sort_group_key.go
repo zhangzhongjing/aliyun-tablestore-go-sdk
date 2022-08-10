@@ -1,6 +1,6 @@
 package search
 
-import "aliyun-tablestore-go-sdk/tablestore/otsprotocol"
+import "github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/otsprotocol"
 
 type GroupKeyGroupBySort struct {
 	Order *SortOrder

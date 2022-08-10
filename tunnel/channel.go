@@ -1,7 +1,7 @@
 package tunnel
 
 import (
-	"aliyun-tablestore-go-sdk/tunnel/protocol"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tunnel/protocol"
 	"github.com/cenkalti/backoff"
 	"go.uber.org/zap"
 	"strings"

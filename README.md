@@ -2,7 +2,7 @@
 
 [![GitHub version](https://badge.fury.io/gh/aliyun%2Faliyun-tablestore-go-sdk.svg)](https://badge.fury.io/gh/aliyun%2Faliyun-tablestore-go-sdk)
 [![Build Status](https://travis-ci.org/aliyun/aliyun-tablestore-go-sdk.svg?branch=master)](https://travis-ci.org/aliyun/aliyun-tablestore-go-sdk)
-[![Coverage Status](https://coveralls.io/repos/github/aliyun/aliyun-tablestore-go-sdk/badge.svg?branch=master)](https://coveralls.io/github/aliyun/aliyun-tablestore-go-sdk?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/aliyun/github.com/zhangzhongjing/aliyun-tablestore-go-sdk/badge.svg?branch=master)](https://coveralls.io/github/aliyun/aliyun-tablestore-go-sdk?branch=master)
 
 ## 关于
 > - 此Go SDK基于阿里云表格存储服务 API构建。

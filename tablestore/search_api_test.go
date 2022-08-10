@@ -1,7 +1,7 @@
 package tablestore
 
 import (
-	"aliyun-tablestore-go-sdk/tablestore/search"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore/search"
 	"fmt"
 	"github.com/golang/protobuf/proto"
 	. "gopkg.in/check.v1"

@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"aliyun-tablestore-go-sdk/tablestore"
-	"aliyun-tablestore-go-sdk/timeline/promise"
-	"aliyun-tablestore-go-sdk/timeline/writer"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/tablestore"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/promise"
+	"github.com/zhangzhongjing/aliyun-tablestore-go-sdk/timeline/writer"
 )
 
 func BenchmarkTmLine_BatchStore_Concurrent(b *testing.B) {
