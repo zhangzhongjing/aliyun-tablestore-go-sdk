@@ -2,6 +2,7 @@ module aliyun-tablestore-go-sdk
 
 go 1.13
 
+
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible
